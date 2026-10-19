@@ -1,4 +1,8 @@
-<p align="center"><img src="assets/greeting.gif" alt="Hi, I'm Ali. ML and GenAI. Building, learning, shipping." width="900"></p>
+<p align="center"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/greeting.gif">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/greeting.gif">
+  <img src="assets/themes/light/greeting.gif" alt="Hi, I'm Ali. ML and GenAI. Building, learning, shipping." width="900">
+</picture></p>
 
 3rd-year B.Tech CSE (AI & ML) student at GITAM, Visakhapatnam (CGPA 9.79). I build ML and GenAI projects end to end, from data and models to working apps.
 
@@ -11,20 +15,52 @@
 Also: SQL, LangChain, RAG, ChromaDB, Hugging Face, Whisper, Streamlit, pandas and Plotly.
 
 ### Featured projects
-[![CineVerse-India](assets/cineverse.png)](https://github.com/MohamedAli077/CineVerse-India)
+<a href="https://github.com/MohamedAli077/CineVerse-India">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/cineverse.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/cineverse.png">
+  <img src="assets/themes/light/cineverse.png" alt="CineVerse-India">
+</picture>
+</a>
 CineVerse-India: Transformer embeddings, cosine similarity, fuzzy search and Streamlit.
 
-[![GenAI Learning Assistant](assets/learning.png)](https://github.com/MohamedAli077/genai-learning-assistant)
+<a href="https://github.com/MohamedAli077/genai-learning-assistant">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/learning.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/learning.png">
+  <img src="assets/themes/light/learning.png" alt="GenAI Learning Assistant">
+</picture>
+</a>
 GenAI Learning Assistant: CLI chatbot with LangChain, Mistral, conversation memory and interview practice.
 
-[![Sales Lead Qualifier](assets/leads.png)](https://github.com/MohamedAli077/sales-lead-qualifier-system)
+<a href="https://github.com/MohamedAli077/sales-lead-qualifier-system">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/leads.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/leads.png">
+  <img src="assets/themes/light/leads.png" alt="Sales Lead Qualifier">
+</picture>
+</a>
 Sales Lead Qualifier: compares 8 scikit-learn models and ranks leads in a Streamlit dashboard. 5th of 60 teams at Idea Sprint 3.0.
 
 ### GitHub overview
-![GitHub overview](assets/stats.png)
-![Contribution activity](assets/activity.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/stats.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/stats.png">
+  <img src="assets/themes/light/stats.png" alt="GitHub public overview snapshot">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/activity.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/activity.png">
+  <img src="assets/themes/light/activity.png" alt="Public contribution heatmap">
+</picture>
 
-Snapshot, 20 Oct 2026, 00:33 IST: 19 public repositories, 0 stars on public repositories, 39 commit contributions and 63 total contributions since 1 Jan 2026. Contributions include activity other than commits. These are not live counters.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/line.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/line.png">
+  <img src="assets/themes/light/line.png" alt="Public contributions per week, 1 Jan to 19 Oct 2026 UTC">
+</picture>
+
+Snapshot, 20 Oct 2026, 00:46 IST (through 19 Oct 2026 UTC): 19 public repositories, 0 stars on public repositories, 36 commit contributions and 59 total contributions since 1 Jan 2026. Contributions include activity other than commits. These are not live counters.
 
 ### Beyond code
 - Mentored 200+ students in mathematics, data structures, design and analysis of algorithms, DBMS and operating systems as a CHITTI instructor (2025-26).
@@ -37,5 +73,9 @@ Snapshot, 20 Oct 2026, 00:33 IST: 19 public repositories, 0 stars on public repo
 
 <details>
 <summary>Static greeting fallback</summary>
-<img src="assets/greeting.png" alt="Hi, I'm Ali. ML and GenAI." width="900">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/greeting.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/greeting.png">
+  <img src="assets/themes/light/greeting.png" alt="Hi, I'm Ali. ML and GenAI." width="900">
+</picture>
 </details>
