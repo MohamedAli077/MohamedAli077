@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-label="Public contributions per week, last 12 months">
+<style>text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}</style>
+<text x="0" y="20" font-size="16" font-weight="600" fill="#e6edf3">Public contributions per week</text>
+<line x1="40" y1="190.0" x2="880" y2="190.0" stroke="#30363d"/><text x="32" y="194.0" text-anchor="end" font-size="11" fill="#8b949e">0</text>
+<line x1="40" y1="152.5" x2="880" y2="152.5" stroke="#30363d"/><text x="32" y="156.5" text-anchor="end" font-size="11" fill="#8b949e">3</text>
+<line x1="40" y1="115.0" x2="880" y2="115.0" stroke="#30363d"/><text x="32" y="119.0" text-anchor="end" font-size="11" fill="#8b949e">6</text>
+<line x1="40" y1="77.5" x2="880" y2="77.5" stroke="#30363d"/><text x="32" y="81.5" text-anchor="end" font-size="11" fill="#8b949e">9</text>
+<line x1="40" y1="40.0" x2="880" y2="40.0" stroke="#30363d"/><text x="32" y="44.0" text-anchor="end" font-size="11" fill="#8b949e">12</text>
+<polyline points="40.0,190.0 56.2,190.0 72.3,190.0 88.5,190.0 104.6,190.0 120.8,190.0 136.9,190.0 153.1,190.0 169.2,190.0 185.4,190.0 201.5,190.0 217.7,190.0 233.8,190.0 250.0,190.0 266.2,190.0 282.3,190.0 298.5,190.0 314.6,190.0 330.8,190.0 346.9,190.0 363.1,190.0 379.2,190.0 395.4,190.0 411.5,140.0 427.7,190.0 443.8,190.0 460.0,190.0 476.2,190.0 492.3,190.0 508.5,152.5 524.6,190.0 540.8,190.0 556.9,152.5 573.1,190.0 589.2,190.0 605.4,190.0 621.5,152.5 637.7,190.0 653.8,190.0 670.0,190.0 686.2,165.0 702.3,190.0 718.5,190.0 734.6,190.0 750.8,190.0 766.9,152.5 783.1,77.5 799.2,190.0 815.4,190.0 831.5,190.0 847.7,190.0 863.8,190.0 880.0,102.5" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="40" y="222" font-size="12" fill="#8b949e">19 Oct 2025 to 20 Oct 2026</text></svg>

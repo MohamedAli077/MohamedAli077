@@ -9,7 +9,7 @@ def gql(q):
 
 u = gql('''{ user(login:"%s"){
   repositories(privacy:PUBLIC, ownerAffiliations:OWNER, first:100){ totalCount nodes{ stargazerCount isFork } }
-  contributionsCollection{ totalCommitContributions contributionCalendar{ totalContributions } } } }''' % LOGIN)
+  contributionsCollection{ totalCommitContributions contributionCalendar{ totalContributions weeks{ contributionDays{ date contributionCount } } } } } }''' % LOGIN)
 repos = [n for n in u["repositories"]["nodes"] if not n["isFork"]]
 items = [
     ("Public repositories", u["repositories"]["totalCount"]),
@@ -34,3 +34,43 @@ for name, (fg, mut, line, acc) in themes.items():
     os.makedirs(f"assets/themes/{name}", exist_ok=True)
     open(f"assets/themes/{name}/stats.svg", "w").write("\n".join(s))
 print(items)
+
+weeks = u["contributionsCollection"]["contributionCalendar"]["weeks"]
+total = u["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+pal = {"dark": ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+       "light": ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]}
+def lvl(c, mx):
+    if c == 0: return 0
+    return min(4, 1 + int(3 * (c - 1) / max(mx, 1)))
+mx = max(d["contributionCount"] for w in weeks for d in w["contributionDays"])
+first, last = weeks[0]["contributionDays"][0]["date"], weeks[-1]["contributionDays"][-1]["date"]
+fmt = lambda d: datetime.date.fromisoformat(d).strftime("%d %b %Y")
+rng = f"{fmt(first)} to {fmt(last)}"
+for name, (fg, mut, line, acc) in themes.items():
+    W, cell, gap = 900, 13, 3
+    H = 7 * (cell + gap) + 70
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Public contributions heatmap, last 12 months">',
+         '<style>text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}</style>',
+         f'<text x="0" y="20" font-size="16" font-weight="600" fill="{fg}">{total} public contributions in the last 12 months</text>']
+    x0 = (W - len(weeks) * (cell + gap)) / 2
+    for i, w in enumerate(weeks):
+        for d in w["contributionDays"]:
+            j = datetime.date.fromisoformat(d["date"]).isoweekday() % 7
+            s.append(f'<rect x="{x0 + i*(cell+gap):.0f}" y="{36 + j*(cell+gap)}" width="{cell}" height="{cell}" rx="3" fill="{pal[name][lvl(d["contributionCount"], mx)]}"/>')
+    s.append(f'<text x="0" y="{H-8}" font-size="12" fill="{mut}">{rng}</text></svg>')
+    open(f"assets/themes/{name}/activity.svg", "w").write("\n".join(s))
+    # weekly line chart
+    vals = [sum(d["contributionCount"] for d in w["contributionDays"]) for w in weeks]
+    H = 230; L, R, T, B = 40, 880, 40, 190
+    ymax = max(4, -(-max(vals) // 4) * 4)
+    px = lambda i: L + (R - L) * i / (len(vals) - 1)
+    py = lambda v: B - (B - T) * v / ymax
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Public contributions per week, last 12 months">',
+         '<style>text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}</style>',
+         f'<text x="0" y="20" font-size="16" font-weight="600" fill="{fg}">Public contributions per week</text>']
+    for k in range(0, ymax + 1, ymax // 4):
+        s.append(f'<line x1="{L}" y1="{py(k):.1f}" x2="{R}" y2="{py(k):.1f}" stroke="{line}"/><text x="{L-8}" y="{py(k)+4:.1f}" text-anchor="end" font-size="11" fill="{mut}">{k}</text>')
+    pts = " ".join(f"{px(i):.1f},{py(v):.1f}" for i, v in enumerate(vals))
+    s.append(f'<polyline points="{pts}" fill="none" stroke="{acc}" stroke-width="2.5" stroke-linejoin="round"/>')
+    s.append(f'<text x="{L}" y="{H-8}" font-size="12" fill="{mut}">{rng}</text></svg>')
+    open(f"assets/themes/{name}/line.svg", "w").write("\n".join(s))

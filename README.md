@@ -49,15 +49,15 @@ Sales Lead Qualifier: compares 8 scikit-learn models and ranks leads in a Stream
   <img src="assets/themes/light/stats.svg" alt="GitHub public stats">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/activity.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/activity.png">
-  <img src="assets/themes/light/activity.png" alt="Public contribution heatmap">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/activity.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/activity.svg">
+  <img src="assets/themes/light/activity.svg" alt="Public contribution heatmap, last 12 months">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/line.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/line.png">
-  <img src="assets/themes/light/line.png" alt="Public contributions per week">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/line.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/line.svg">
+  <img src="assets/themes/light/line.svg" alt="Public contributions per week">
 </picture>
 
 ### Beyond code
