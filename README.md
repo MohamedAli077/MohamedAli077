@@ -22,7 +22,6 @@ Transformers, DSA (LeetCode), n8n automation, and a brain-tumor MRI CNN project.
 ## GitHub stats
 ![Ali's GitHub stats](https://github-readme-stats.vercel.app/api?username=MohamedAli077&show_icons=true&theme=github_dark&hide_border=true)
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MohamedAli077&layout=compact&theme=github_dark&hide_border=true)
-![Activity graph](https://github-readme-activity-graph.vercel.app/graph?username=MohamedAli077&theme=github-compact&hide_border=true)
 
 ## Beyond code
 - Mentored 200+ engineering students in DSA and core CS as a CHITTI instructor (2025-26)
