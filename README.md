@@ -1,6 +1,5 @@
 # Hi, I'm Ali 👋
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&width=500&lines=ML+%26+GenAI+builder;B.Tech+CSE+(AI+%26+ML)+%40+GITAM;Learning+Transformers+%26+DSA;Shipping+real+projects)](https://git.io/typing-svg)
 
 3rd-year B.Tech CSE (AI & ML) student at GITAM, Visakhapatnam (CGPA 9.79). I build ML and GenAI projects end to end - from data and models to working apps.
 
@@ -19,9 +18,6 @@
 ## Currently learning
 Transformers, DSA (LeetCode), n8n automation, and a brain-tumor MRI CNN project.
 
-## GitHub stats
-![Ali's GitHub stats](https://github-readme-stats.vercel.app/api?username=MohamedAli077&show_icons=true&theme=github_dark&hide_border=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MohamedAli077&layout=compact&theme=github_dark&hide_border=true)
 
 ## Beyond code
 - Mentored 200+ engineering students in DSA and core CS as a CHITTI instructor (2025-26)
