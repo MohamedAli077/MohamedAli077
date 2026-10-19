@@ -44,9 +44,9 @@ Sales Lead Qualifier: compares 8 scikit-learn models and ranks leads in a Stream
 
 ### GitHub overview
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/stats.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/stats.png">
-  <img src="assets/themes/light/stats.png" alt="GitHub public overview snapshot">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/stats.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/stats.svg">
+  <img src="assets/themes/light/stats.svg" alt="GitHub public stats">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/activity.png">
@@ -57,25 +57,14 @@ Sales Lead Qualifier: compares 8 scikit-learn models and ranks leads in a Stream
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/line.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/line.png">
-  <img src="assets/themes/light/line.png" alt="Public contributions per week, 1 Jan to 19 Oct 2026 UTC">
+  <img src="assets/themes/light/line.png" alt="Public contributions per week">
 </picture>
-
-Snapshot, 20 Oct 2026, 00:46 IST (through 19 Oct 2026 UTC): 19 public repositories, 0 stars on public repositories, 36 commit contributions and 59 total contributions since 1 Jan 2026. Contributions include activity other than commits. These are not live counters.
 
 ### Beyond code
 - Mentored 200+ students in mathematics, data structures, design and analysis of algorithms, DBMS and operating systems as a CHITTI instructor (2025-26).
 - WebArcs Domain Lead, Meta Developers Community GITAM.
 
 ### Connect
-<a href="https://www.linkedin.com/in/mohamedmahaboobali"><img src="assets/connect-linkedin.png" width="210" alt="Connect on LinkedIn"></a>
-<a href="https://leetcode.com/u/AkmalAli_07/"><img src="assets/connect-leetcode.png" width="210" alt="LeetCode: AkmalAli_07"></a>
-<a href="mailto:mohamed.ali.akmal.ali@gmail.com"><img src="assets/connect-email.png" width="210" alt="Email Ali"></a>
-
-<details>
-<summary>Static greeting fallback</summary>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/themes/dark/greeting.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/themes/light/greeting.png">
-  <img src="assets/themes/light/greeting.png" alt="Hi, I'm Ali. ML and GenAI." width="900">
-</picture>
-</details>
+<a href="https://www.linkedin.com/in/mohamedmahaboobali"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://leetcode.com/u/AkmalAli_07/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+<a href="mailto:mohamed.ali.akmal.ali@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
